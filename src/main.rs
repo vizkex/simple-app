@@ -1,4 +1,4 @@
 use simple_app::run;
 fn main() {
-    run()
+    pollster::block_on(run());
 }
